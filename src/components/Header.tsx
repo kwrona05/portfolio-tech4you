@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import "../App.css";
+import "../App.scss";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -14,7 +14,7 @@ const Header = () => {
       <div>
         <h1>Tech 4 You</h1>
       </div>
-      <div>
+      <div className="header-bar">
         <div>{t("home-page")}</div>
         <div>{t("offer")}</div>
         <div>{t("portfolio")}</div>
